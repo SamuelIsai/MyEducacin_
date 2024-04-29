@@ -1,0 +1,26 @@
+[
+    {
+        "image": "../assets/cordova.avif",
+        "name": "cordova"
+    },
+    {
+        "image": "../assets/lempira.png",
+        "name": "lempira"
+    },
+    {
+        "image": "../assets/lempira00.avif",
+        "name": "lempira00"
+    },
+    {
+        "image": "../assets/colon.avif",
+        "name": "colon"
+    },
+    {
+        "image": "../assets/quetzal.avif",
+        "name": "quetzal"
+    },
+    {
+        "image": "../assets/dolarr.png",
+        "name": "dolarr"
+    }
+]

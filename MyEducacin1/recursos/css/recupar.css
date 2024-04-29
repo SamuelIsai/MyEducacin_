@@ -1,0 +1,80 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.password-recovery-form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: 70px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #999;
+}
+
+.input-field input {
+    padding: 12px 40px 12px 30px;
+    width: 100%;
+    border: none;
+    background: #eee;
+    border-radius: 25px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5995fd;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.submit-btn:hover {
+    background-color: #4c86e8;
+}
+
+.notification {
+    background: #3f903f;
+    color: #fff;
+    height: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #5995fd;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

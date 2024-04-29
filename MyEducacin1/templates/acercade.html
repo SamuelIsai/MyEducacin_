@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de nosotros</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <nav style="background-color: #155acb;" class="navbar navbar-dark">
+            <div class="container">
+                <button class="btn btn-primary me-2" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                    Regresar
+                </button>
+            </div>
+        </nav>
+        <header style="background-color: #155acb;" class=" text-white py-4">
+            <h2 class="text-center">Acerca de nosotros</h2>
+        </header>
+        <main class="container py-4">
+            <h3 class="mb-4">Nuestro Equipo</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4" v-for="teamMember in teamMembers" :key="teamMember.id">
+                    <div class="card">
+                        <img :src="teamMember.image" class="card-img-top" alt="Miembro del equipo">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ teamMember.name }}</h4>
+                            <p class="card-text">{{ teamMember.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                teamMembers: [
+                    {
+                        id: 1,
+                        name: 'Equipo TecnoPower A2',
+                        image: '../recursos/img/TecnoPower A2.jpeg',
+                        description: 'Somos un equipo apasionado por la tecnología y el desarrollo de software. Estamos comprometidos en brindar soluciones innovadoras a nuestros clientes.'
+                    },
+                ]
+            },
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+        
+    </script>
+</body>
+</html>

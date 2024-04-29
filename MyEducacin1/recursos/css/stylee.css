@@ -1,0 +1,50 @@
+body {
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#Nileves {
+    background-image: url(../recursos/img/fondo1.jpeg);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.container_a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinea los elementos en la parte superior de cada fila */
+    margin-top: 40px;
+}
+
+.image-container {
+    flex: 0 0 calc(30% - 20px); /* Establece el ancho de cada contenedor de imagen al 30% del contenedor principal, restando el margen */
+    margin: 10px; /* Añade margen entre las imágenes */
+    box-sizing: border-box; /* Asegura que el margen no afecte el ancho real del contenedor */
+}
+
+.imagess {
+    position: relative;
+    margin: 60px;
+}
+
+.myImage {
+    height: 250px;
+    width: 200px;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

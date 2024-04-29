@@ -1,0 +1,54 @@
+[
+    {
+        "categoria": "DIFERENTES MONEDAS",
+        "pregunta": "¿Moneda de Costa Rica?",
+        "respuesta": "Colon",
+        "incorrecta1": "Quetzal",
+        "incorrecta2": "Dolar",
+        "incorrecta3": "Peso",
+        "imagen": "https://images3.cgb.fr/images/billets/b44/b44_0639a.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "DIFERENTES MONEDAS",
+        "pregunta": "¿moneda de mexico?",
+        "respuesta": "El peso",
+        "incorrecta1": "dolar",
+        "incorrecta2": "rublo",
+        "incorrecta3": "colon",
+        "imagen": "https://www.bloomberglinea.com/resizer/9zkid8ZEjyT0sI5y9pb1H7nbFEQ=/600x0/filters:format(webp):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/TG7V4F7SQJDBXHT4Q4S3G6A5YA.jpg",
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "DIFERENTES MONEDAS",
+        "pregunta": "¿moneda utilizada en los Estados Unidos de Norte America?",
+        "respuesta": "dolar",
+        "incorrecta1": "peso",
+        "incorrecta2": "lempira",
+        "incorrecta3": "Rublo",
+        "imagen": "https://elordenmundial.com/wp-content/uploads/2020/08/dollar-499481_1920-1-1310x926.jpg",
+        "objectFit": "cover"
+    },
+
+    {
+        "categoria": "DIFERENTES MONEDAS",
+        "pregunta": "¿Moneda de Guatemala",
+        "respuesta": "Quetzal",
+        "incorrecta1": "Cordova",
+        "incorrecta2": "rublo",
+        "incorrecta3": "lempira",
+        "imagen": "https://www.bloomberglinea.com/resizer/vMGoTiaUfoq1MH6SN7capn0tBTg=/800x0/filters:format(webp):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/RMMZD7O4CND7BCFSAYFTOCPB5Q.jpg",
+        "objectFit": "cover"
+    },
+
+    {
+        "categoria": "DIFERENTES MONEDAS",
+        "pregunta": "¿Moneda de Nicaragua?",
+        "respuesta": "Cordova",
+        "incorrecta1": "Quetzal",
+        "incorrecta2": "Rublo",
+        "incorrecta3": "Lempira",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Billete_de_1000_cordobas.jpg",
+        "objectFit": "cover"
+    }
+]

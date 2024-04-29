@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .contact-card {
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <nav style="background-color: #155acb;" class="navbar navbar-dark">
+            <div class="container">
+                <button class="volver" style="padding: 8px 30px; border: none; border-radius: 20px; background: #fff;" onclick="goBack()">Volver</button>
+                <h1 class="navbar-brand mb-0">Contactos</h1>
+            </div>
+        </nav>
+        <main class="container py-4">
+            <h2 class="text-center mb-4">Nuestro Equipo</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" v-for="contact in contacts" :key="contact.id">
+                    <div class="contact-card">
+                        <h4 class="mt-3">{{ contact.name }}</h4>
+                        <p>{{ contact.role }}</p>
+                        <p>{{ contact.email }}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                contacts: [
+                    {
+                        id: 1,
+                        name: 'Michell Alexandra Cruz Penado',
+                        role: 'SCRUM',
+                        email: 'michellalexandra1402@gmail.com'
+                    },
+                    {
+                        id: 2,
+                        name: 'Alvaro Antonio Rivera Moran',
+                        role: 'DISEÑADOR',
+                        email: 'alvarocaste13@gmail.com'
+                    },
+                    {
+                        id: 3,
+                        name: 'Jose Samuel Parada',
+                        role: 'DISEÑADOR',
+                        email: 'jose@gmail.com'
+                    },
+                    {
+                        id: 4,
+                        name: 'Oscar Manuel Lopez Velasquez',
+                        role: 'PROGRAMADOR Y DISEÑADOR',
+                        email: 'oscarmanuelvelasquez123@gmail.com'
+                    },
+                    {
+                        id: 5,
+                        name: 'Samuel Isai Mejia Alfaro',
+                        role: 'PROGRAMADOR Y DISEÑADOR',
+                        email: 'mejiasamuel023@gmail.com'
+                    },
+                    {
+                        id: 6,
+                        name: 'Jose Antonio Martinez Chavez',
+                        role: 'DISEÑADOR',
+                        email: 'kaudmsosydldi@gmail.com'
+                    }
+                ]
+            }
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Agrega estas reglas CSS a tu archivo de estilos o en una etiqueta <style> en el <head> de tu HTML */
+        .star-container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        }
+
+        .star-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        opacity: 0; /* Las estrellas están ocultas inicialmente */
+        transition: opacity 0.5s ease-in-out;
+        }
+
+        .star-icon img {
+        width: 100%;
+        height: auto;
+        }
+
+        /* Animación para mostrar las estrellas una por una */
+        @keyframes show-stars {
+        0% {
+            opacity: 0;
+        }
+        33% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+
+        /* Aplicar animación cuando el jugador gane */
+        .result.show-stars .star-icon:nth-child(1) {
+        animation: show-stars 1s 0.5s forwards;
+        }
+
+        .result.show-stars .star-icon:nth-child(2) {
+        animation: show-stars 1s 1s forwards;
+        }
+
+        .result.show-stars .star-icon:nth-child(3) {
+        animation: show-stars 1s 1.5s forwards;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="result">
+    <!-- Contenedor de las estrellas -->
+    <div class="star-container">
+        <div class="star-icon">
+            <img src="../recursos/img/estrella.png" alt="Estrella">
+        </div>
+        <div class="star-icon">
+            <img src="../recursos/img/estrella.png" alt="Estrella">
+        </div>
+        <div class="star-icon">
+            <img src="../recursos/img/estrella.png" alt="Estrella">
+        </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
